@@ -1,0 +1,111 @@
+*
+{
+    /*margin: 0;
+    padding: 0;
+    box-sizing: border-box;*/
+}
+body
+{
+    background: rgb(58, 64, 64);
+}
+.all
+{
+    
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    /*border: 2px solid red;*/
+}
+section
+{
+    margin: 100px 0px 0px 1100px;
+    position: relative;
+    transform: skewY(-15deg);
+}
+section div
+{
+    position: relative;
+    background: rgb(75, 75, 75);
+    transition: 0.5s;
+    z-index:  var(--i); 
+}
+section div:hover
+{
+    transform: translateY(-50px);
+}
+section div::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 70px;
+    height: 100px;
+    background: rgb(35, 35, 35);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+section div::after
+{
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100px;
+    height: 70px;
+    background: rgb(55, 55, 55);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+.color1:hover
+{
+    background: rgb(0, 0, 0);
+}
+.color1:hover::before
+{
+    background: rgb(15, 15, 15);
+}
+.color1:hover::after
+{
+    background: rgb(25, 25, 25);
+}
+.color2:hover
+{
+    background: rgb(255, 55, 55);
+}
+.color2:hover::before
+{
+    background: rgb(135, 55, 55);
+}
+.color2:hover::after
+{
+    background: rgb(213, 52, 52);
+}
+.color3:hover
+{
+    background: rgb(0, 119, 255);
+}
+.color3:hover::before
+{
+    background: rgb(18, 73, 135);
+}
+.color3:hover::after
+{
+    background: rgb(12, 103, 207);
+}
+.color4:hover
+{
+    background: rgb(69, 255, 168);
+}
+.color4:hover::before
+{
+    background: rgb(66, 176, 125);
+}
+.color4:hover::after
+{
+    background: rgb(68, 207, 142);
+}
+
