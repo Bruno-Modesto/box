@@ -10,7 +10,6 @@ body
 }
 .all
 {
-    
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -108,4 +107,3 @@ section div::after
 {
     background: rgb(68, 207, 142);
 }
-
